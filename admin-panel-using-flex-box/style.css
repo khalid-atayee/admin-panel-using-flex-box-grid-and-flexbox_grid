@@ -1,0 +1,261 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+    font-family: 'Happy monkey',cursive;
+    display: flex;
+    padding: .7em;
+    justify-content: space-between;
+    background-color: #6c757d;
+    align-items: center;
+    color: white;
+    position: relative;
+    
+}
+header ul{
+    display: flex;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    padding-left: 2em;
+}
+header ul li i{
+    font-size: 1.5rem;
+}
+
+.profile{
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#burgar{
+    display: none;
+    padding-right: 1em;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+#burgar i{
+    padding-left: 1em;
+}
+.nav{
+    left:0%
+}
+
+
+.main-content{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+aside{
+    background-color: #495057;
+    min-height: 83vh;
+    flex: 1 0 2;
+    transition: all 100ms;
+    
+}
+aside ul{
+    width: 250px;
+}
+
+.main-content ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+}
+.company-name{
+    font-family: 'Happy monkey', sans-serif;
+    color: rgba(255,255,255,0.7);
+    border-bottom: 1px solid #2F3E46;
+    padding: 1em 0;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+
+}
+
+.menu{
+    margin: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.spanActive{
+   
+    position: absolute;
+    right:-6%;
+    top: 7%;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: #CAD2C5;
+    border-width: 5px 20px 20px 5px;
+
+    transform: rotate(-43deg);
+}
+.menu li i {
+    margin-right: 1em;
+    color: white;
+    align-items: center;
+    
+   
+}
+.menu li a{
+    font-size: 1.2rem;
+}
+.main-content ul li{
+    width:100%;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: .7em 0;  
+    font-size: 1.1rem;
+}
+.main-content ul li a{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin-left: 1em;
+ 
+}
+
+
+main{
+    background-color: #CAD2C5;
+    flex:2; 
+}
+.wrapper-container{
+    display: flex;
+}
+.content{
+    background-color: white;
+    width: 100%;
+    margin: 1.2em;
+    padding: 1.5em;
+    /* box-shadow: 5px,5px,5px,black;/ */
+    box-shadow:  0px 0px 5px 0px #b6bdb2;
+    font-family: 'Roboto', sans-serif;
+    /* z-index: 1; */
+}
+
+#search_input{
+    width: 100%;
+    padding: .5em 2em;
+    border: #2F3E46;
+    outline: none;
+}
+.search_list{
+   display: flex;
+   width: 300px;
+   flex: 2 1 1;
+}
+.showInput{
+    display: none;
+}
+
+
+.active{
+    width: fit-content;
+    background-color: red;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 20vh;
+    background-color: #e3ebde;
+    position: absolute;
+    /* top: 0%; */
+    right: 0%;
+    padding: 1em;
+}
+.btn{
+    padding: .7em 1.5em;
+    margin: .3em;
+}
+.toggle-container{
+    display: none;
+}
+
+footer{
+    display: flex;
+    padding: 2em;
+    background-color: #6c757d;
+    color: rgba(255, 255, 255,.8);
+    justify-content: space-between;
+
+}
+footer ul{
+    display: flex;
+    
+}
+footer ul li{
+    text-decoration: none;
+    list-style: none;
+    padding-right: 1em;
+}
+
+
+@media (max-width:768px){
+    .aside{
+        position:fixed;
+        bottom: 0%;
+        right:100%;
+        transition: all 100ms;
+    }
+    header ul{
+        display: none;
+        transition: all 250ms;
+    }
+   
+    .header-icons {
+        position: absolute;
+        top: 100%;
+        padding: .5em;
+        left: 0;
+        right: 0;
+        background-color: #e3ebde;
+        color:#2F3E46;
+        width: 100%;        
+        display: flex;
+        justify-content: flex-end;
+        z-index: 1;
+    }
+    header ul li{
+        margin-right: 2em;
+    
+    }
+    #burgar{
+        display:inline-block;
+    }
+    .btn-container{
+        top: 23%;
+        /* left: 40%; */
+        width: 50%;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+    }
+    footer ul{
+       line-height: 20px; 
+    }
+    /* #dots{
+        display: ;
+    } */
+}
